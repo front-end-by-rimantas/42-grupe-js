@@ -81,3 +81,5 @@ console.log(sms);
 
 const sms2 = `Sveiki, mano vardas ${name}, man yra ${age} metai ir as esu is ${city}.`;
 console.log(sms2);
+
+console.log('SMS teksto ilgis:', sms.length);
