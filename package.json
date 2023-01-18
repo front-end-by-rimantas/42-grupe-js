@@ -4,6 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "typeof": "nodemon ./js/10-typeof.js",
+        "function": "nodemon ./js/09-function.js",
         "for": "nodemon ./js/08-for.js",
         "switch": "nodemon ./js/07-switch.js",
         "if": "nodemon ./js/06-if.js",
