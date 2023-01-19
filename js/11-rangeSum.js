@@ -15,7 +15,28 @@ function rangeSum(from, to) {
         return 'ERROR: antrasis parametras turi buti sveikasis skaicius.';
     }
 
-    return 10;
+    // let i = from;
+    // for (; ;) {
+    //     if (i <= to) {
+    //         sum += i++;
+    //     } else {
+    //         break;
+    //     }
+    // }
+
+    let sum = 0;
+
+    if (from > to) {
+        const x = from;
+        from = to;
+        to = x;
+    }
+
+    for (let i = from; i <= to; i++) {
+        sum += i;
+    }
+
+    return sum;
 }
 
 /*
@@ -54,11 +75,24 @@ console.log(rangeSum(NaN, NaN));
 
 console.log(rangeSum(0, 4), '-->', 10);
 console.log(rangeSum(0, 100), '-->', 5050);
+console.log(rangeSum(-50, 50), '-->', 0);
+console.log(rangeSum(0, 0), '-->', 0);
+console.log(rangeSum(5, 5), '-->', 5);
+console.log(rangeSum(-7, -7), '-->', -7);
+console.log(rangeSum(-70, 30), '-->', -2020);
+console.log(rangeSum(574, 815), '-->', 168069);
 
-// console.log(rangeSum(-50, 50), '-->', 0);
-// console.log(rangeSum(0, 0), '-->', 0);
-// console.log(rangeSum(-70, 30), '-->', -2020);
-// console.log(rangeSum(574, 815), '-->');
+console.log(rangeSum(4, 0), '-->', 10);
+console.log(rangeSum(100, 0), '-->', 5050);
+
+console.log('------------');
+console.log(rangeSum(0, 1000000000));
 
 console.assert(rangeSum(0, 4) === 10);
 console.assert(rangeSum(0, 100) === 5050, [0, 100, 5050]);
+
+
+// console.log('---------------');
+// for (let i = 0, j = 5, k = 99; i < j + k && i < 10 && j < 15; i++, j += 2, k -= 10) {
+//     console.log(i, j, k);
+// }
