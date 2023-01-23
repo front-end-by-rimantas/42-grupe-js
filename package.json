@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "reverseString": "nodemon ./js/12-reverseString.js",
         "rangeSum": "nodemon ./js/11-rangeSum.js",
         "typeof": "nodemon ./js/10-typeof.js",
         "function": "nodemon ./js/09-function.js",
