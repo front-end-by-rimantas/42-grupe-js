@@ -53,3 +53,64 @@ const carIntro = `Parduoti ${car.brand} ${car.model} (${car.color}) uz ${car.pri
 console.log(carIntro);
 
 console.log(car['kaip tau sekasi']);
+
+console.clear();
+
+const students = [
+    {
+        name: 'Petras',
+        marks: [10, 2, 8, 4, 6],
+    },
+    {
+        name: 'Maryte',
+        marks: [2, 4, 6, 8, 10, 2, 4, 8],
+    },
+    {
+        name: 'Jonas',
+        marks: [9, 8, 7],
+    },
+];
+
+console.log(students[0]);
+console.log(students[0]['marks']);
+console.log(students[0].marks);
+console.log(students[0]['marks'][0]);
+console.log(students[0].marks[0]);
+console.log(students[0]['marks'][1]);
+console.log(students[0].marks[1]);
+console.log(students[0]['marks'][2]);
+console.log(students[0].marks[2]);
+
+// const student1 = students[0];
+// const student1Name = student1.name;
+// const student1Marks = student1.marks;
+
+// console.log(student1);
+// console.log(student1Name);
+// console.log(student1Marks);
+
+const ona = {
+    name: 'Ona',
+    age: 55,
+    marks: [10, 5],
+    favoriteColor: 'red',
+    parents: [
+        {
+            name: 'Jonas',
+            age: 99,
+            phones: [
+                111111111,
+                222222222,
+            ]
+        },
+        {
+            name: 'Maryte',
+            age: 88,
+            phones: [
+                333333333,
+            ]
+        },
+    ]
+}
+
+console.log(ona.parents[0].phones[1]);
