@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "nthLetter": "nodemon ./js/16-nthLetter.js",
         "biggestNum": "nodemon ./js/15-biggestNum.js",
         "numSize": "nodemon ./js/14-numSize.js",
         "beliekaninis": "nodemon ./js/13-beliekaninis.js",
