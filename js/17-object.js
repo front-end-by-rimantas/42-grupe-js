@@ -35,4 +35,21 @@ console.log(petras);
 const maryte = `Sveiki, mano vardas yra ${person2['name']} ir man ${person2['age']} metu.`;
 console.log(maryte);
 
-console.log(person1['']);
+const car = {
+    brand: 'Volvo',
+    model: 'S40',
+    color: 'black',
+    'kaip tau sekasi': 'super duper',
+    price: 10000,
+    currency: 'LTL',
+}
+
+const kasManeDomina = 'kaip tau sekasi';
+const info = car[kasManeDomina];
+
+console.log(info);
+
+const carIntro = `Parduoti ${car.brand} ${car.model} (${car.color}) uz ${car.price} ${car.currency}.`;
+console.log(carIntro);
+
+console.log(car['kaip tau sekasi']);
