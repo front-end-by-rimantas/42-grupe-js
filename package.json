@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "arrayMethods": "nodemon ./js/19-arrayMethods.js",
         "stringMethods": "nodemon ./js/18-stringMethods.js",
         "object": "nodemon ./js/17-object.js",
         "nthLetter": "nodemon ./js/16-nthLetter.js",
