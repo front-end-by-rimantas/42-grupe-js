@@ -82,7 +82,37 @@ function abbr(str) {
     return str[0];
 }
 
+const abbr2 = str => str[0];
+
 const namesAbbr = names.map(abbr);
+const namesAbbr2 = names.map(abbr2);
+const namesAbbr3 = names.map(function (str) {
+    return str[0];
+});
+const namesAbbr4 = names.map(s => s[0]);
 
 console.log(names);
 console.log(namesAbbr);
+console.log(namesAbbr2);
+console.log(namesAbbr3);
+console.log(namesAbbr4);
+
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+const lyginiai = numbers.filter(n => n % 2 === 0);
+const nelyginiai = numbers.filter(n => n % 2 !== 0);
+console.log(lyginiai);
+console.log(nelyginiai);
+
+const students = ['Petras', 'Maryte', 'Jonas', 'Ona'];
+const ilgiVardai = students.filter(s => s.length > 5);
+const trumpiVardai = students.filter(s => s.length <= 5);
+console.log(ilgiVardai);
+console.log(trumpiVardai);
+
+const trumpuVarduAbbr = students
+    .filter(v => v.length <= 5)
+    .map(v => v[0])
+    .reverse()
+    .join('-');
+console.log(trumpuVarduAbbr);
+

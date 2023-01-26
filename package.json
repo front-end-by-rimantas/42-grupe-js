@@ -4,6 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "ternary": "nodemon ./js/22-ternary.js",
+        "ciklai": "nodemon ./js/21-ciklai.js",
         "arrow": "nodemon ./js/20-arrow.js",
         "arrayMethods": "nodemon ./js/19-arrayMethods.js",
         "stringMethods": "nodemon ./js/18-stringMethods.js",
