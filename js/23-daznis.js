@@ -26,7 +26,6 @@ function daznis(str) {
     }
 
     return { symbols: maxSymbols, max };
-    // return [maxSymbols, max];
 }
 
 console.log(daznis('vasara'));
