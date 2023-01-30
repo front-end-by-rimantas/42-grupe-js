@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "classExtend": "nodemon ./js/25-classExtend.js",
         "class": "nodemon ./js/24-class.js",
         "daznis": "nodemon ./js/23-daznis.js",
         "ternary": "nodemon ./js/22-ternary.js",
